@@ -1,0 +1,464 @@
+* {
+    background-color: #f1faee;
+    font-size: 16px;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
+header {
+    overflow: hidden;
+    margin-bottom: 12rem;
+}
+/* === NAVIGATION BAR === */
+nav {
+    font-family: 'Dosis';
+    font-weight: bold;
+    position: fixed;
+    line-height: 7.25rem;
+    margin-left: -1.7rem;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-color: transparent;
+}
+ul {
+    list-style: none;
+    background-color: transparent;
+}
+ul li {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: black;
+}
+li a {
+    position: absolute;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    height: 1rem;
+    line-height: 0;
+    color: black;
+    transition: font-size 0.5s;
+}
+li a:visited {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+li a:hover {
+    color: #1d3557;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.hover-underline-animation {
+    display: absolute;
+    position: relative;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e63946;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* === HOME SECTION */
+.under-logo-text h2 {
+    font-family: 'Permanent Marker';
+    font-size: 2.25rem;
+    color: #1d3557;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 8rem;
+    text-shadow: 0.1rem 0.1rem 0 #e63946;
+}
+
+.under-logo-text {
+    background-color: transparent;
+}
+
+.logo-text {
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo-animation {
+    animation: tracking-in-contract 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.under-logo-animation {
+	animation: tracking-in-contract-2 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-contract-2 {
+    0% {
+      letter-spacing: 0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.7;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1.75em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.7;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+}
+
+/* === GLITCH EFFECT === */
+.glitch-bloc {
+    display: inline-block;
+    overflow: hidden;
+    top: 0;
+    height: 12rem;
+}
+
+.glitchedAnim,
+.invisible-text {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 10.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.glitchedAnim {
+    position: absolute;
+    top: 0rem;
+    opacity: 0.9;
+}
+.invisible-text {
+    visibility: hidden;
+}
+.glitchedAnim:nth-child(2) {
+    color: #e63946;
+    background-color: transparent;
+    animation: skewAnim 3s infinite;
+}
+.glitchedAnim:nth-child(3) {
+    color: #3df0cf;
+    background-color: transparent;
+    animation: glitchAnim2 3s infinite;
+}
+.glitchedAnim:nth-child(4) {
+    color: #e63946;
+    text-shadow: 0.5rem 0.5rem 0 #003049;
+    background-color: transparent;
+    animation: glitchAnim1 3s infinite;
+}
+  
+@keyframes glitchAnim1 {
+    7% {
+      transform: none;
+    }
+    10% {
+      transform: translate(6px, -2px);
+    }
+    13% {
+      transform: none;
+    }
+    20% {
+      transform: none;
+    }
+    23% {
+      transform: translate(-10px, -7px);
+    }
+    26% {
+      transform: none;
+    }
+    40% {
+      transform: none;
+    }
+    43% {
+      transform: translate(10px, -9px);
+    }
+    46% {
+      transform: none;
+    }
+    65% {
+      transform: none;
+    }
+    68% {
+      transform: translate(7px, 5px);
+    }
+    71% {
+      transform: none;
+    }
+    100% {
+      transform: none;
+    }
+  }
+  
+@keyframes glitchAnim2 {
+    7% {
+      transform: none;
+    }
+    10% {
+      transform: translate(-6px, 2px);
+    }
+    13% {
+      transform: none;
+    }
+    20% {
+      transform: none;
+    }
+    23% {
+      transform: translate(10px, 7px);
+    }
+    26% {
+      transform: none;
+    }
+    40% {
+      transform: none;
+    }
+    43% {
+      transform: translate(-10px, 9px);
+    }
+    46% {
+      transform: none;
+    }
+    65% {
+      transform: none;
+    }
+    68% {
+      transform: translate(-7px, 5px);
+    }
+    71% {
+      transform: none;
+    }
+    100% {
+      transform: none;
+    }
+  }
+  
+@keyframes skewAnim {
+    20% {
+      transform: none;
+    }
+    23% {
+      transform: skew(3deg, -3deg) translate(10px, 5px);
+    }
+    26% {
+      transform: none;
+    }
+    40% {
+      transform: none;
+    }
+    43% {
+      transform: skew(3deg, -5deg) translate(-5px, 2px);
+    }
+    46% {
+      transform: none;
+    }
+    100% {
+      transform: none;
+    }
+  }
+  
+  /* === ABOUT ME SECTION */
+.about-me {
+    overflow: hidden;
+}
+
+.poza-robert {
+    overflow: hidden;
+    float: right;
+    width: 25rem;
+    padding-right: 3rem;
+}
+
+.poza-robert img {
+    margin: 1rem 3.5rem 2rem 0rem;
+    width: 25rem;
+    height: 95%;
+    border-radius: 6rem;
+    box-shadow: 0.8rem 0.8rem 0 #e63946;
+    transition: transform .5s ease;
+}
+
+
+.poza-robert-animation {
+    animation: slide-in-fwd-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.info-robert {
+    overflow: hidden;
+    text-align: center;
+    margin-left: 2rem;
+    padding-top: 6rem;
+    font-family: 'Dosis';
+    background-color: transparent;
+}
+
+.info-robert h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.info-robert h3 {
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.info-robert-animation {
+    animation: slide-in-fwd-left 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-fwd-right {
+    0% {
+      transform: translateZ(-8rem) translateX(8rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-left {
+    0% {
+        transform: translateZ(8rem) translateX(-8rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateZ(0) translateX(0);
+    }
+}
+
+/* === PROJECTS === */
+.projects {
+    display: inline-block;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    width: 100%;
+}
+
+.projects-robert {
+    display: flex;
+}
+
+.project {
+    border: 2px #1d3557 solid;
+    width: 13rem;
+    height: 13rem;
+    margin-left: 5rem;
+    border-radius: 1.5rem;
+    transition: box-shadow 0.5s, transform 0.5s, border 0.5s, background-size 0.5s;
+}
+
+.projects-title h2 {
+    font-family: 'Dosis';
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 6rem;
+    background-color: transparent;
+}
+
+.project h3 {
+    font-family: 'Dosis';
+    font-size: 1.5rem;
+    margin-left: 10rem;
+    padding-left: 0.5rem;
+    position: absolute;
+    background-color: #f1faee;
+    color: #1d3557;
+    border-radius: 0.8rem;
+    transition: color 0.5s;
+}
+
+.ratio {
+    background-image: url('eu\ la\ ratio.jpg');
+    background-size: 210px;
+    background-position: center;
+    margin-left: 8rem;
+}
+
+.jersey {
+    background-image: url('jersey-city.jpg');
+    background-position: center;
+    background-size: 210px;
+}
+
+.progress h3 {
+    margin-left: 8rem;
+}
+
+.project:hover {
+    box-shadow: 0 1rem 0 #e63946;
+    border: 2px #e63946 solid;
+    transform: translateY(-1rem);
+    background-size: 220px;
+}
+
+.project:hover h3 {
+    display: block;
+    color: #e63946;
+}
+
+.scale-in-center {
+	animation: scale-in-center 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.tracking-in-expand-fwd-top {
+	animation: tracking-in-expand-fwd-top 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    background-color: transparent;
+}
+
+@keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
