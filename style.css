@@ -462,3 +462,30 @@ li a:hover {
       opacity: 1;
     }
   }
+
+
+
+@media only screen and (min-width: 1000px){
+  * {
+    font-size: 24px;
+  }
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  nav {
+    line-height: 850%;
+    margin-left: -1.5%; 
+  }
+  .projects {
+    margin-top: 8rem;
+  }
+  .ratio {
+    background-size: 320px;
+  }
+  .jersey {
+    background-size: 320px;
+  }
+  .project:hover {
+    background-size: 350px;
+  }
+}
