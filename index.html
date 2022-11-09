@@ -4,6 +4,9 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <script defer src="refreshAnimation.js"></script>
+        <script defer src="imageScript.js"></script>
+        <script defer src="scrollAnimation.js"></script>
     </head>
 
     <body>
@@ -31,21 +34,21 @@
             </ul>
         </nav>
 
-        <section id="about-me">
+        <section class="hidden-about-me" id="about-me">
             <div class="poza-robert" id="pozaRobert">
                 <img src="./poza cu mn.jpg"  id="robert">
             </div>
-            <div class="info-robert " id="infoRobert">
+            <div class="info-robert" id="infoRobert">
                 <h2>About Me</h2>
                 <h3>I'm Robert, a passionate web developer <br>and graphic designer based in Cluj-Napoca.</h3>
             </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="projects hidden-projects" id="projects">
             <div class="projects-title" id="projTitle">
                 <h2>Projects</h2>
             </div>
-            <div class="projects-robert">
+            <div class="projects-robert" id="project">
                 <div class="project ratio" id="proj1">
                     <h3>RATIO</h3>
                 </div>
@@ -67,7 +70,5 @@
         <footer>
         </footer>
 
-        <script src="refreshAnimation.js"></script>
-        <script src="imageScript.js"></script>
     </body>
 </html>

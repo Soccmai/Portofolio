@@ -3,6 +3,9 @@
     font-size: 16px;
 }
 
+html {
+}
+
 body {
   scroll-snap-type: y mandatory;
 }
@@ -11,6 +14,22 @@ header {
     overflow: hidden;
     margin-bottom: 30%;
 }
+
+/* === SCROLL */
+.hidden {
+  transition: all 1.5s;
+}
+
+.show-left {
+  animation: slide-in-fwd-left 1.2s;
+  background-color: transparent;
+}
+
+.show-projects {
+  animation: scale-in-center 1.2s;
+  background-color: transparent;
+}
+
 /* === NAVIGATION BAR === */
 nav {
     font-family: 'Dosis';
@@ -360,7 +379,7 @@ li a:hover {
 /* === PROJECTS === */
 .projects {
     display: inline-block;
-    margin-top: 0%;
+    margin-top: 20%;
     margin-bottom: 10rem;
     text-align: center;
     width: 100%;
@@ -443,25 +462,8 @@ li a:hover {
   }
 }
 
-.tracking-in-expand-fwd-top {
-	animation: tracking-in-expand-fwd-top 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    background-color: transparent;
-}
 
-@keyframes tracking-in-expand-fwd-top {
-    0% {
-      letter-spacing: -0.5em;
-      transform: translateZ(-700px) translateY(-500px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      transform: translateZ(0) translateY(0);
-      opacity: 1;
-    }
-  }
+
 
 
 
@@ -470,7 +472,7 @@ li a:hover {
     font-size: 24px;
   }
   .logo-text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   nav {
     line-height: 750%;
