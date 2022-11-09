@@ -3,9 +3,6 @@
     font-size: 16px;
 }
 
-html {
-}
-
 body {
   scroll-snap-type: y mandatory;
 }
@@ -33,6 +30,7 @@ header {
 
 /* === NAVIGATION BAR === */
 nav {
+    display: block;
     font-family: 'Dosis';
     font-weight: bold;
     position: fixed;
@@ -392,9 +390,11 @@ li a:hover {
 
 .projects-robert {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .project {
+    flex-direction: column;
     border: 2px #1d3557 solid;
     width: 13rem;
     height: 13rem;
@@ -599,5 +599,86 @@ footer h2 {
   }
   .project:hover {
     background-size: 350px;
+  }
+  .contact {
+    margin-bottom: 10rem;
+  }
+}
+
+
+@media only screen and (max-device-width: 420px){
+  * {
+    font-size: 12px;
+  }
+  nav {
+    display: none;
+  }
+  .under-logo-text h2 {
+    font-size: 1.2rem;
+  }
+  .info-robert h2 {
+    font-size: 8rem;
+  }
+  .poza-robert img {
+    margin-top: 13rem;
+    height: 40rem;
+  }
+  .about-me {
+    margin-bottom: 10rem;
+  }
+  .projects h2 {
+    font-size: 8rem;
+  }
+  .project {
+    flex-wrap: nowrap;
+    width: 25rem;
+    height: 25rem;
+    border: 0.3rem #1d3557 solid;
+    margin-left: 10rem;
+    margin-bottom: 8rem;
+  }
+  .project h3 {
+    font-size: 4rem;
+    margin-left: 15rem;
+  }
+  .ratio {
+    background-size: 350px;
+  }
+  .ratio h3 {
+    margin-left: 20rem;
+  }
+  .jersey {
+    background-size: 350px;
+  }
+  .jersey h3 {
+    margin-left: 20rem;
+  } 
+  .project:hover {
+    box-shadow: 0 1rem 0 #e63946;
+    border: 0.3rem #e63946 solid;
+    transform: translateY(-1rem);
+    background-size: 380px;
+  }
+  .skills {
+    margin-left: -3rem;
+  }
+  .skill {
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto; 
+  }
+  .skills h2 {
+    font-size: 8rem;
+  }
+  .skills h3 {
+    font-size: 4rem;
+  }
+  .skill img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .contact h2 {
+    font-size: 8rem;
   }
 }
