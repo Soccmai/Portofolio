@@ -61,3 +61,27 @@ function refreshProject() {
     }, 1000);
 }
 projectButton.onclick = refreshProject;
+
+
+const skillsButton = document.getElementById('li-skills');   
+const skillsBox = document.getElementById('skills-icon');
+function refreshSkills() {
+    skillsBox.classList.remove('show-box');
+    skillsBox.classList.add('show-box');
+    setTimeout(function() {
+        aboutMeInfo.classList.remove('show-box');
+    }, 1000);
+}
+skillsButton.onclick = refreshSkills;
+
+
+const contactButton = document.getElementById('li-contact');   
+const contactBox = document.getElementById('contact');
+function refreshContact() {
+    contactBox.classList.remove('show-left');
+    contactBox.classList.add('show-left');
+    setTimeout(function() {
+        aboutMeInfo.classList.remove('show-left');
+    }, 1000);
+}
+contactButton.onclick = refreshContact;

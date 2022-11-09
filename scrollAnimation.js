@@ -58,3 +58,22 @@ const observerSkills = new IntersectionObserver((entries) => {
 });
 const hiddenSkills = document.querySelectorAll('.hidden-skills');
 hiddenSkills.forEach((el) => observerSkills.observe(el));
+
+
+
+const contact = document.getElementById('contact');
+const contactTag = document.getElementById('li-contact');
+const observerContact = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            contact.classList.add('show-left');
+            contactTag.classList.add('hover-underline');
+        }   else {
+            contact.classList.remove('show-left');
+            contactTag.classList.remove('hover-underline');
+        };
+    });
+});
+const hiddenContact = document.querySelectorAll('.hidden-contact');
+hiddenContact.forEach((el) => observerContact.observe(el));
