@@ -490,9 +490,13 @@ li a:hover {
   margin-top: 1rem;
 }
 
+.skill {
+  width: 13rem;
+}
+
 .skill img {
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .skills-icon {
@@ -504,19 +508,7 @@ li a:hover {
 
 .skill {
   justify-content: space-around;
-  margin-left: 8rem;
-}
-
-.illustrator {
-  margin-left: 7.5rem;
-}
-
-.photoshop {
-  margin-left: 6rem;
-}
-
-.google {
-  margin-left: 7rem;
+  margin-left: 4.5rem;
 }
 
 
@@ -577,7 +569,7 @@ footer h2 {
 
 
 
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 1800px){
   * {
     font-size: 24px;
   }
@@ -605,6 +597,18 @@ footer h2 {
   }
 }
 
+@media only screen and (max-device-width: 1800px) and (min-device-width: 1300px){
+  .skill {
+    width: 15rem;
+    margin-left: 7.5rem;
+  }
+  nav {
+    line-height: 900%;
+  }
+  .project {
+    margin-left: 10rem;
+  }
+}
 
 @media only screen and (max-device-width: 420px){
   * {
@@ -614,7 +618,7 @@ footer h2 {
     display: none;
   }
   .under-logo-text h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .info-robert h2 {
     font-size: 8rem;
