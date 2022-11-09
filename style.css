@@ -619,6 +619,9 @@ footer h2 {
   .info-robert h2 {
     font-size: 8rem;
   }
+  .info-robert h3 {
+    font-size: 4rem;
+  }
   .poza-robert img {
     margin-top: 15rem;
     height: 40rem;
@@ -669,6 +672,7 @@ footer h2 {
   }
   .skills h2 {
     font-size: 8rem;
+    margin-left: 7rem;
   }
   .skills h3 {
     font-size: 4rem;
