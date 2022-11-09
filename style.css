@@ -12,7 +12,7 @@ body {
 
 header {
     overflow: hidden;
-    margin-bottom: 30%;
+    margin-bottom: 22%;
 }
 
 /* === SCROLL */
@@ -21,12 +21,12 @@ header {
 }
 
 .show-left {
-  animation: slide-in-fwd-left 1.2s;
+  animation: slide-in-fwd-left 2.2s;
   background-color: transparent;
 }
 
-.show-projects {
-  animation: scale-in-center 1.2s;
+.show-box {
+  animation: scale-in-center 2.2s;
   background-color: transparent;
 }
 
@@ -95,6 +95,10 @@ li a:hover {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.hover-underline { 
+  font-size: 1.5rem;
 }
 
 
@@ -314,6 +318,7 @@ li a:hover {
     float: right;
     width: 32%;
     padding-right: 6.66%;
+    margin-bottom: 5rem;
 }
 
 .poza-robert img {
@@ -379,8 +384,7 @@ li a:hover {
 /* === PROJECTS === */
 .projects {
     display: inline-block;
-    margin-top: 20%;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
     text-align: center;
     width: 100%;
 }
@@ -462,7 +466,56 @@ li a:hover {
   }
 }
 
+/* === SKILLS === */
 
+.skills {
+  display: inline-block;
+  margin-bottom: 10rem;
+  text-align: center;
+  width: 100%;
+}
+
+.skills-title-class h2 {
+  font-family: 'Dosis';
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background-color: transparent;
+}
+
+.skill h3 {
+  font-family: 'Dosis';
+  font-size: 1.5rem;
+}
+
+.skill img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.skills-icon {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 11rem;
+}
+
+.skill {
+  justify-content: space-around;
+  margin-left: 8rem;
+}
+
+.illustrator {
+  margin-left: 7.5rem;
+}
+
+.photoshop {
+  margin-left: 6rem;
+}
+
+.google {
+  margin-left: 7rem;
+}
 
 
 
@@ -479,8 +532,7 @@ li a:hover {
     margin-left: -1.5%; 
   }
   .projects {
-    margin-top: 8rem;
-    margin-bottom: 14rem;
+    margin-top: 4rem;
   }
   .ratio {
     background-size: 320px;
