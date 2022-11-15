@@ -613,7 +613,7 @@ footer h2 {
   }
 }
 
-@media only screen and (max-device-width: 1299px) and (min-device-width: 421px){
+@media only screen and (max-device-width: 1000px) and (min-device-width: 421px){
   nav{
     display: none;
   }
